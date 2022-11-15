@@ -1,0 +1,8 @@
+{
+    "files.autoSave": "afterDelay",
+    "gitlens.statusBar.alignment": "right",
+    "editor.suggest.showStatusBar": true,
+    "debug.showSubSessionsInToolBar": true,
+    "workbench.editor.wrapTabs": true,
+    "problems.showCurrentInStatus": true
+}
