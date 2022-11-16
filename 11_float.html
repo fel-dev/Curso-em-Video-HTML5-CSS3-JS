@@ -12,7 +12,6 @@
                 width: 80%;
                 padding: 15px;
                 background: #ccc;
-                /* overflow auto passa a entender sozinho a altura dos elementos dentro dele */
                 overflow: auto;
             }
             #container div{
@@ -22,7 +21,6 @@
                 margin: 5px;
                 
             }
-            /* float se ajusta ao tamanho da janela */
             #div1{
                 float: left;
             }
@@ -32,8 +30,25 @@
             }
 
             #div3{
-                /* elements with float are not considered in the normal flow of the document, besides they understand echother*/
                 float: left;
+            }
+            header{
+                background: #ccc;
+                height: 50px;
+            }
+            nav{
+                width: 25%;
+                height: 50px;
+                background: orange;
+            }
+            main{
+                width: 70%;
+                height: 100px;
+                background: yellow;
+            }
+            footer{
+                background: #00f;
+                height: 50px;
             }
         </style>
     </head>
