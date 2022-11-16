@@ -77,7 +77,6 @@ main{
     width: 32%;
     /* display: inline-block; */
     float: left;
-    border: 2px solid #00f;
     box-sizing: border-box;
 }
 
@@ -86,6 +85,15 @@ main{
 }
 .card img{
     width: 100%;
+    display: block; /* Para que não fique com espaço entre a img e o texto */
+}
+.card p {
+    background-color: #444;
+    color: #fff;
+    margin: 0;
+    padding: 15px;
+    text-transform: uppercase;
+    
 }
 
 .content-section h2 {
