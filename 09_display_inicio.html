@@ -29,6 +29,8 @@
                 background-color: #333;
                 color: #ddd;
                 cursor: pointer;
+                position: fixed;
+                left: 400px;
             }
             h1, p , div, footer {
                 border: 3px solid red;
@@ -83,9 +85,14 @@ commodo aliquam at tincidunt a donec lorem donec adipiscing velit, feugiat solli
         const div = document.querySelector('div');
         const footer = document.querySelector('footer');
         
+        // get hour of the day
+        const date = new Date();
+        const hour = date.getHours();
+        const minute = date.getMinutes();
+
         // At starts the page is light
         btnTheme.classList.toggle('dark');
-        btnTheme.textContent = '☀';
+        btnTheme.textContent = '☀'+ hour +":"+ minute;
 
         // After clicling the button the theme changes
         btnTheme.addEventListener('click', function(){
@@ -99,7 +106,7 @@ commodo aliquam at tincidunt a donec lorem donec adipiscing velit, feugiat solli
             // button change text and color
             btnTheme.classList.toggle('lightbtn');
             btnTheme.classList.toggle('light');
-            btnTheme.textContent = '☀';
+            btnTheme.textContent = '☀'+ hour +":"+ minute;
         });
     </script>
 </html>
