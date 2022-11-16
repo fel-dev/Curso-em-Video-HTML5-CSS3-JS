@@ -68,9 +68,26 @@ main{
 
 .content-section {
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 15px;
+    overflow: auto;/* Precisa colocar overflow auto para que o conteúdo não fique fora da div */
 }
+
+.card{
+    width: 32%;
+    /* display: inline-block; */
+    float: left;
+    border: 2px solid #00f;
+    box-sizing: border-box;
+}
+
+.card-1, .card-2{
+    margin-right: 2%;
+}
+.card img{
+    width: 100%;
+}
+
 .content-section h2 {
     background-color: #ddd;
     border-bottom: 2px solid #aaa;
