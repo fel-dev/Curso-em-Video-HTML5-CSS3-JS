@@ -20,14 +20,27 @@
                 margin: 5px;
                 
             }
+
+            #div2{
+                /* float left affects elements bellow */
+                float: left;
+                /*  */
+                float: right;
+            }
+
+            #div3{
+                background-color: yellow;
+                /* "clear:left" makes don't lestening float left */
+                clear: both;
+            }
         </style>
     </head>
     <body>
         <h1>float</h1>
         <div id="container">
             <div id="div1">div1</div>
-            <div id="div2">div2</div>
-            <div id="div3">div3</div>            
+            <div id="div2">div2 Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div id="div3">div3 Lorem ipsum dolor sit amet consectetur !</div>            
         </div>
         
         <hr>
